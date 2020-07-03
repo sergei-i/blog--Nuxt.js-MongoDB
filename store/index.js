@@ -14,3 +14,9 @@ export const mutations = {
     state.error = null;
   }
 }
+
+export const actions = {
+  nuxtServerInit({dispatch}) {
+    dispatch('auth/autoLogin');
+  }
+}
