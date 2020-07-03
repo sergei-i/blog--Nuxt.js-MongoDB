@@ -36,7 +36,8 @@ export default {
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
-    '@/plugins/globals'
+    '@/plugins/globals',
+    '@/plugins/axios'
   ],
   /*
   ** Auto import components
@@ -65,5 +66,6 @@ export default {
     transpile: [/^element-ui/],
   },
 
-  loading: {color: 'green'}
+  loading: {color: 'green'},
+  serverMiddleware: ['~server/index.js']
 }

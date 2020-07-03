@@ -8,7 +8,3 @@
       middleware: ['admin-auth'],
     }
 </script>
-
-<style scoped>
-
-</style>
