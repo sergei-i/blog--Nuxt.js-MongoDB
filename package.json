@@ -7,12 +7,17 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "export": "nuxt export",
-    "serve": "nuxt serve"
+    "serve": "nuxt serve",
+    "heroku-postbuild": "npm run build"
+  },
+  "engines": {
+    "node": "12.x"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.11.0",
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.19.0",
+    "chart.js": "^2.9.3",
     "cookie": "^0.4.1",
     "element-ui": "^2.13.2",
     "express": "^4.17.1",
@@ -25,9 +30,11 @@
     "nuxt": "^2.13.0",
     "passport": "^0.4.1",
     "passport-jwt": "^4.0.0",
+    "vue-chartjs": "^3.5.0",
     "vue-markdown": "^2.2.4"
   },
   "devDependencies": {
+    "@nuxtjs/pwa": "^3.0.0-beta.20",
     "node-sass": "^4.14.1",
     "nodemon": "^2.0.4",
     "sass-loader": "^8.0.2"

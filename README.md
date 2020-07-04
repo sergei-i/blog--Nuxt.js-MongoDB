@@ -1,3 +1,3 @@
 # Nuxt-Blog
 
-Creating App using Nuxt.js and MongoDB
+Creating SSR app using Nuxt.js and MongoDB

@@ -47,16 +47,28 @@ export default {
   /*
   ** Nuxt.js dev-modules
   */
-  buildModules: [],
+  buildModules: [
+    '@nuxtjs/pwa',
+  ],
+  pwa: {
+    workbox: {
+      /* workbox options https://pwa.nuxtjs.org/modules/workbox.html */
+    },
+    meta: {
+      /* meta options https://pwa.nuxtjs.org/modules/meta.html */
+    }
+  },
   /*
   ** Nuxt.js modules
   */
   modules: [
     '@nuxtjs/axios',
   ],
-
   axios: {
-    // proxyHeaders: false
+    baseURL: process.env.BASE_URL || 'http://localhost:3000'
+  },
+  env: {
+    appName: 'SSR blog'
   },
   /*
   ** Build configuration

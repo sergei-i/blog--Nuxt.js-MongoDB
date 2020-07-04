@@ -27,6 +27,8 @@
         </el-button>
       </el-form-item>
 
+      <p>login: admin, password: 111111 for admin user</p>
+
     </el-form>
   </el-card>
 </template>
@@ -34,6 +36,9 @@
 <script>
   export default {
     layout: 'empty',
+    head: {
+      title: `Вход в панель администратора | ${process.env.appName}`
+    },
     data() {
       return {
         loading: false,

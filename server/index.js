@@ -6,7 +6,7 @@ const passportStrategy = require('./middleware/passport-strategy');
 const authRoutes = require('./routes/auth.routes');
 const postRoutes = require('./routes/post.routes');
 const commentRoutes = require('./routes/comment.routes');
-const keys = require('./keys/keys.dev');
+const keys = require('./keys');
 const app = express();
 const port = 3000;
 

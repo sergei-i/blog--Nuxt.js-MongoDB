@@ -15,7 +15,7 @@
 
   export default {
     head: {
-      title: 'Главная'
+      title: `Главная | ${process.env.appName}`
     },
     async asyncData({store}) {
       const posts = await store.dispatch('post/fetch');
