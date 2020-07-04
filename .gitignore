@@ -90,3 +90,5 @@ sw.*
 *.swp
 
 /info.txt
+
+server/keys/keys.dev.js

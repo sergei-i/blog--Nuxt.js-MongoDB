@@ -1,7 +1,10 @@
 <template>
-  <nav>
-    <h1>SSR Blog</h1>
-  </nav>
+  <div>
+    <nav>
+      <h1>SSR Blog</h1>
+    </nav>
+    <small><nuxt-link to="/admin/login">Admin login page</nuxt-link></small>
+  </div>
 </template>
 
 <script>
@@ -14,7 +17,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    height: 40px;
     border-bottom: 1px solid #e6e6e6;
   }
 </style>
