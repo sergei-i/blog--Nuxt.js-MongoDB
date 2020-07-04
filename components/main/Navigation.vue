@@ -3,7 +3,7 @@
     <nav>
       <h1>SSR Blog</h1>
     </nav>
-    <small><nuxt-link to="/admin/login">Admin login page</nuxt-link></small>
+    <small><nuxt-link to="/admin/">Admin page</nuxt-link></small>
   </div>
 </template>
 

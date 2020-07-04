@@ -9,7 +9,12 @@
       :rules="rules"
       ref="form"
     >
-      <h2>Войти в панель администратора</h2>
+      <div class="title">
+        <h2>Войти в панель администратора</h2>
+        <nuxt-link to="/">
+          <i class="el-icon-back"></i>
+        </nuxt-link>
+      </div>
 
       <el-form-item label="Логин" prop="login">
         <el-input v-model.trim="controls.login"></el-input>
@@ -27,7 +32,7 @@
         </el-button>
       </el-form-item>
 
-      <p>login: admin, password: 111111 for admin user</p>
+      <small>login: <b>admin</b>, password: <b>111111</b> for admin user</small>
 
     </el-form>
   </el-card>
@@ -94,3 +99,11 @@
     }
   }
 </script>
+
+<style lang="scss" scoped>
+  .title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+</style>
